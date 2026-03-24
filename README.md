@@ -4,7 +4,7 @@
 
 **Plataforma imobiliária premium** · Flutter · Clean Architecture · Riverpod 2.x
 
-[![CI](https://github.com/lucasreis/imobibrasil_app/actions/workflows/ci.yml/badge.svg)](https://github.com/lucasreis/imobibrasil_app/actions/workflows/ci.yml)
+[![CI](https://github.com/lucasreisvillasboas/imobibrasil_app/actions/workflows/ci.yml/badge.svg)](https://github.com/lucasreisvillasboas/imobibrasil_app/actions/workflows/ci.yml)
 [![Flutter](https://img.shields.io/badge/Flutter-3.41.5-02569B?logo=flutter)](https://flutter.dev)
 [![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?logo=dart)](https://dart.dev)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
@@ -25,6 +25,12 @@ App Flutter de listagem e gerenciamento de imóveis para o processo seletivo da 
 | **Listagem** | Cards premium com Hero animation, shimmer loading, busca e filtros |
 | **Detalhe** | SliverAppBar expandida 420px, galeria, características e contato |
 | **Formulário** | Criação e edição de imóveis com validação e seções animadas |
+
+---
+
+## Demo
+
+https://github-production-user-asset-6210df.s3.amazonaws.com/60412678/568168488-ce657ac0-81af-4304-9369-a26540e95d25.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20260324%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260324T064551Z&X-Amz-Expires=300&X-Amz-Signature=0c139d9540231f1cc872c1efd5d78e7d690537344486ed9a72f4faa70e19d187&X-Amz-SignedHeaders=host
 
 ---
 
@@ -76,7 +82,7 @@ color: context.colors.surface
 
 ```bash
 # Clone o repositório
-git clone https://github.com/lucasreis/imobibrasil_app.git
+git clone https://github.com/lucasreisvillasboas/imobibrasil_app.git
 cd imobibrasil_app
 
 # Instala dependências
