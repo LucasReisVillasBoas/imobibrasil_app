@@ -31,7 +31,7 @@ coverage:
 	open coverage/html/index.html
 
 build:
-	flutter build web --release --web-renderer canvaskit
+	flutter build web --release
 
 clean:
 	flutter clean
