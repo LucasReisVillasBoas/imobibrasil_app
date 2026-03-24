@@ -64,29 +64,29 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
               children: [
                 Center(
                   child: SingleChildScrollView(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: 24, vertical: 32),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 24, vertical: 32),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         _buildLogo(context),
-                    const SizedBox(height: 40),
-                    _buildGlassCard(context, authState, isLoading),
-                    const SizedBox(height: 24),
-                    _buildTestCredentials(),
-                  ],
+                        const SizedBox(height: 40),
+                        _buildGlassCard(context, authState, isLoading),
+                        const SizedBox(height: 24),
+                        _buildTestCredentials(),
+                      ],
+                    ),
+                  ),
                 ),
-              ),
+                // Botão de toggle de tema — topo direito
+                const Positioned(
+                  top: 8,
+                  right: 8,
+                  child: _ThemeToggleButton(),
+                ),
+              ],
             ),
-            // Botão de toggle de tema — topo direito
-            const Positioned(
-              top: 8,
-              right: 8,
-              child: _ThemeToggleButton(),
-            ),
-          ],
-        ),
-      ),
+          ),
         ],
       ),
     );
@@ -408,8 +408,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
         children: [
           const Row(
             children: [
-              Icon(Icons.info_outline,
-                  size: 14, color: AppColors.primary),
+              Icon(Icons.info_outline, size: 14, color: AppColors.primary),
               SizedBox(width: 6),
               Text(
                 'CREDENCIAIS DE TESTE',

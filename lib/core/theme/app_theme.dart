@@ -192,8 +192,7 @@ class AppTheme {
           displayColor: AppColors.darkTextPrimary,
         ),
         appBarTheme: AppBarTheme(
-          backgroundColor:
-              AppColors.darkSurface.withValues(alpha: 0.60),
+          backgroundColor: AppColors.darkSurface.withValues(alpha: 0.60),
           foregroundColor: AppColors.darkTextPrimary,
           elevation: 0,
           scrolledUnderElevation: 0,

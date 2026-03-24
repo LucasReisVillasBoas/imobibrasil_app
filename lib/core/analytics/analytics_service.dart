@@ -5,11 +5,9 @@ class AnalyticsService {
 
   // ── Auth ──────────────────────────────────────────────────────────────────
 
-  static Future<void> logLogin() =>
-      _analytics.logLogin(loginMethod: 'email');
+  static Future<void> logLogin() => _analytics.logLogin(loginMethod: 'email');
 
-  static Future<void> logLogout() =>
-      _analytics.logEvent(name: 'logout');
+  static Future<void> logLogout() => _analytics.logEvent(name: 'logout');
 
   static Future<void> logLoginFailed() =>
       _analytics.logEvent(name: 'login_failed');
@@ -52,7 +50,8 @@ class AnalyticsService {
             itemId: '$imovelId',
             itemName: titulo,
             itemCategory: tipo,
-            itemVariant: bairro != null && cidade != null ? '$bairro, $cidade' : null,
+            itemVariant:
+                bairro != null && cidade != null ? '$bairro, $cidade' : null,
             price: preco,
           ),
         ],

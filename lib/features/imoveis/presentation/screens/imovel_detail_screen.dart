@@ -318,7 +318,10 @@ class _ImovelDetailContentState extends State<_ImovelDetailContent> {
           ),
         ),
       ),
-    ).animate().fadeIn(delay: 100.ms, duration: 400.ms).slideY(begin: 0.1, end: 0);
+    )
+        .animate()
+        .fadeIn(delay: 100.ms, duration: 400.ms)
+        .slideY(begin: 0.1, end: 0);
   }
 
   // ── Características ────────────────────────────────────────────────────────

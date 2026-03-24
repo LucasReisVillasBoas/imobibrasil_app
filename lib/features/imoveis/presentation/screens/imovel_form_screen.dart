@@ -125,7 +125,9 @@ class _ImovelFormScreenState extends ConsumerState<ImovelFormScreen> {
               'https://picsum.photos/seed/novo${DateTime.now().millisecondsSinceEpoch}/600/400',
         );
 
-        await ref.read(imoveisNotifierProvider.notifier).createImovel(newImovel);
+        await ref
+            .read(imoveisNotifierProvider.notifier)
+            .createImovel(newImovel);
         await AnalyticsService.logImovelCreated(
           tipo: formState.tipo,
           preco: double.tryParse(formState.preco) ?? 0,
@@ -169,8 +171,7 @@ class _ImovelFormScreenState extends ConsumerState<ImovelFormScreen> {
         ),
         backgroundColor: AppColors.primary,
         behavior: SnackBarBehavior.floating,
-        shape:
-            RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         duration: const Duration(seconds: 2),
       ),
     );

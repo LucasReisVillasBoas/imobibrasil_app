@@ -58,7 +58,8 @@ class ImovelCard extends StatelessWidget {
             errorWidget: (_, __, ___) => Container(
               height: 180,
               color: Colors.grey.shade200,
-              child: const Icon(Icons.home_outlined, size: 48, color: Colors.grey),
+              child:
+                  const Icon(Icons.home_outlined, size: 48, color: Colors.grey),
             ),
           ),
         ),

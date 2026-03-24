@@ -99,8 +99,7 @@ final filterNotifierProvider =
 
 // ---------- Lista filtrada (derivada) ----------
 
-final imoveisFilteredProvider =
-    Provider<AsyncValue<List<ImovelEntity>>>((ref) {
+final imoveisFilteredProvider = Provider<AsyncValue<List<ImovelEntity>>>((ref) {
   final imoveisAsync = ref.watch(imoveisNotifierProvider);
   final filter = ref.watch(filterNotifierProvider);
 

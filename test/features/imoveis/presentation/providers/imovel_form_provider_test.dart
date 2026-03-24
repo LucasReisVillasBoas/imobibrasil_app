@@ -23,7 +23,9 @@ void main() {
     });
 
     test('setTitulo deve atualizar titulo', () {
-      container.read(imovelFormNotifierProvider.notifier).setTitulo('Casa Nova');
+      container
+          .read(imovelFormNotifierProvider.notifier)
+          .setTitulo('Casa Nova');
       final state = container.read(imovelFormNotifierProvider);
       expect(state.titulo, equals('Casa Nova'));
     });
@@ -66,7 +68,9 @@ void main() {
         areaM2: 50,
         foto: 'https://foto.com',
       );
-      container.read(imovelFormNotifierProvider.notifier).initFromEntity(entity);
+      container
+          .read(imovelFormNotifierProvider.notifier)
+          .initFromEntity(entity);
       final state = container.read(imovelFormNotifierProvider);
       expect(state.titulo, equals('Apto Teste'));
       expect(state.tipo, equals('aluguel'));
